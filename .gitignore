@@ -1,0 +1,5 @@
+## Ignore files ending un .class
+*.class
+
+## ignore folders
+arquitectura
