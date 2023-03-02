@@ -3,4 +3,5 @@
 *.class
 
 ## ignore folders
-arquitectura
+arquitectura/
+
