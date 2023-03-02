@@ -1,4 +1,5 @@
-## Ignore files ending un .class
+
+## ignore files ending .class
 *.class
 
 ## ignore folders
