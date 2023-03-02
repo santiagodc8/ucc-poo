@@ -1,5 +1,7 @@
+
 ## ignore files ending .class
 *.class
 
 ## ignore folders
-arquitectura
+arquitectura/
+
