@@ -2,50 +2,86 @@ package co.edu.campusucc.poo;
 
 public abstract class Vehiculo {
 
-    public Vehiculo() {}
+    public Vehiculo() {
+    }
 
-    //Properties
+    // Properties
     private String marca;
     private String tipo;
     private String carroseria;
+    private int velocidad;
 
     public String toString() {
-        return "Abstract Class --> Vehiculo";
+        return "Abstract Class --> Vehiculo: " + getTipo() + " " + getCarroseria() + " " + getMarca();
     }
 
-    //Abstract Behavior 
+    // Abstract Behavior
     public abstract void startingEngine();
+
     public abstract void stopingEngine();
 
-    //Defined Behavior
-    public void speedUp(){
-        String speedUpString = "⏩ speed up in Progress: ";
-        for (int i = 0; i < 20 ; i++) {
-            speedUpString +="⏩";
+    // Defined Behavior
+    public void speedUp() {
+        String speedUpString = "speed up in Progress: ";
+        for (int i = 0; i < velocidad; i++) {
+            speedUpString += "⏩";
+        }
+
+        for (int i = 0; i < 10; i++) {
+            speedUpString += "⏩";
             System.out.println(speedUpString);
             try {
-                Thread.sleep(1000-(i*50));
+                Thread.sleep(1000 - (i * 50));
             } catch (InterruptedException e) {
-                System.err.println("🛑:"+ e);
+                System.err.println("⛔:" + e);
+            }
+        }
+        addSpeed(10);
+    }
+
+    protected int addSpeed(int velocidad) {
+        setVelocidad(this.velocidad + velocidad);
+        return getVelocidad();
+    }
+
+    private int downSpeed(int velocidad) {
+        setVelocidad(this.velocidad - velocidad);
+        return getVelocidad();
+    }
+
+    public void currentSpeed() {
+        System.out.println("Current Speed ⏩: " + getVelocidad());
+    }
+
+    public void parking() {
+        for (int i = 0; i < 5; i++) {
+            System.out.println("¡¡🅿️🅿️ Parking in Progress ⚠️⚠️!!");
+            try {
+                Thread.sleep(1000 - (i * 50));
+            } catch (InterruptedException e) {
+                System.err.println("⛔:" + e);
             }
         }
     }
 
-    public void parking() throws InterruptedException{
-        for (int i = 0; i < 10 ; i++) {
-            System.out.println("¡¡🚥 Parking in Progress 🚥!!");
-            Thread.sleep(1000-(i*50));
+    public void breaking() {
+        String speedUpString = "";
+        for (int i = 0; i < velocidad; i++) {
+            speedUpString += "⏩";
         }
+        for (int i = 0; i < 10; i++) {
+            speedUpString = speedUpString.substring(0, speedUpString.length() - 1);
+            System.out.println("¡¡🚥 Braking in Progress🚥: " + speedUpString);
+            try {
+                Thread.sleep(1000 - (velocidad + i * 50));
+            } catch (InterruptedException e) {
+                System.err.println("⛔:" + e);
+            }
+        }
+        downSpeed(10);
     }
 
-    public void breaking() throws InterruptedException{
-        for (int i = 0; i < 10 ; i++) {
-            System.out.println("¡¡🚥 Braking in Progress 🚥!!");
-            Thread.sleep(1000-(i*100));
-        }
-    }
-
-    //Getters and Setters
+    // Getters and Setters
     public String getMarca() {
         return marca;
     }
@@ -68,5 +104,13 @@ public abstract class Vehiculo {
 
     public void setCarroseria(String carroseria) {
         this.carroseria = carroseria;
+    }
+
+    public int getVelocidad() {
+        return velocidad;
+    }
+
+    public void setVelocidad(int velocidad) {
+        this.velocidad = velocidad;
     }
 }
