@@ -44,6 +44,20 @@ public class MainAirships {
         avion.landing();
         avion.stopingEngine();
 
+        avion = new TipoAvioneta();
+        avion.setMarca("Tecnam P2002 Sierra Mk2");
+        avion.setTipo("Avion de Agricultura");
+        System.out.println(avion);
+
+        avion.startingEngine();
+        avion.speedUp();
+        avion.speedUp();
+        avion.currentSpeed();
+        avion.irrigation();
+        avion.descent();
+        avion.descent();
+        avion.landing();
+        avion.stopingEngine();
 
     }
     
