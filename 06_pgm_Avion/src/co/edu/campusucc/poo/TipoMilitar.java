@@ -1,11 +1,12 @@
 package co.edu.campusucc.poo;
 
-public class TipoCarga extends Avion{
+public class TipoMilitar extends Avion {
 
-    public TipoCarga(){
+    public TipoMilitar(){
         super();
-        setTipo("Carga");
+        setTipo("Militar");
     }
+    
     @Override
     public void startingEngine() {
         System.out.println("⛽Check Fuel ✅");
@@ -52,5 +53,4 @@ public class TipoCarga extends Avion{
         }
         System.out.println("Stoped...⚡⚡");
     }
-    
 }
