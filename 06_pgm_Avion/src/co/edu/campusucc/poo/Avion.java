@@ -64,6 +64,17 @@ public abstract class Avion {
 
     }
 
+    public void shootMissiles(){
+        for (int i = 0; i < 5; i++) {
+            System.out.println("🚀🚀 Missiles ready to fire 🔥🔥🔥");
+            try {
+                Thread.sleep(1000 - (i * 50));
+            } catch (InterruptedException e) {
+                System.err.println("⛔:" + e);
+            }
+        }
+    }
+
     public void descent(){
         String speedUpString = "";
         for (int i = 0; i < velocidad; i++) {
