@@ -9,7 +9,7 @@ public class MainThreadExtends extends Thread {
 
     public static void main(String[] args) {
         ThreadExtends thread = new ThreadExtends();
-
+        thread.setTimes(new Random().nextInt(50));
         // Invoking Thread using start() method
         thread.start();
     }
