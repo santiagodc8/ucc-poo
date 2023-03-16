@@ -1,11 +1,9 @@
 package co.edu.campusucc.poo;
-
-import java.io.*;
-import java.util.*;
+import java.util.Random;
 
 import co.edu.campusucc.poo.domain.ThreadExtends;
 
-public class MainThreadExtends extends Thread {
+public class MainThreadExtends{
 
     public static void main(String[] args) {
         ThreadExtends thread = new ThreadExtends();
