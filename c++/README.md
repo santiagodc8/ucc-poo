@@ -1,5 +1,18 @@
 # **C++ Programming Language**
 ![c++](https://img.icons8.com/fluency/2x/c-plus-plus-logo.png)
+
+## **Hola Mundo en C++**
+```c++
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    cout << "Hola Mundo!" << endl;
+    return 0;
+}
+
+```
 ## **Historia de C++**
 El lenguaje de programación C++ fue creado por Bjarne Stroustrup en 1983 en los laboratorios Bell de AT&T en New Jersey, Estados Unidos. Stroustrup era un estudiante de doctorado en informática en la Universidad de Cambridge en el Reino Unido, y estaba trabajando en el desarrollo de un lenguaje de programación que permitiera una programación más eficiente y de mayor nivel que el lenguaje C.
 

@@ -1,5 +1,9 @@
 # **Ruby Programming Language**
 ![c++](https://img.icons8.com/color/2x/ruby-programming-language.png)
+## **Hola Mundo en Ruby**
+```ruby
+puts "Hola Mundo!"
+```
 ## **Historia de Ruby**
 El lenguaje de programación Ruby fue creado por Yukihiro "Matz" Matsumoto en Japón en 1995. Matz diseñó Ruby para ser un lenguaje de programación que combinara la funcionalidad de otros lenguajes populares, como Perl, Smalltalk y Lisp, con una sintaxis fácil de entender y una programación orientada a objetos.
 

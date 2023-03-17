@@ -1,5 +1,15 @@
 # **Java Programming Language**
 ![c++](https://cdn-icons-png.flaticon.com/128/226/226777.png)
+
+## **Hola Mundo en Java**
+```java
+public class HolaMundo {
+    public static void main(String[] args) {
+        System.out.println("Hola Mundo!");
+    }
+}
+
+```
 ## **Historia de Java**
 Java es un lenguaje de programación orientado a objetos que fue desarrollado por James Gosling y su equipo en Sun Microsystems en la década de 1990. Gosling y su equipo estaban trabajando en un proyecto llamado "Green Project", que tenía como objetivo desarrollar un lenguaje de programación que pudiera ejecutarse en cualquier plataforma, independientemente del sistema operativo y del hardware.
 
