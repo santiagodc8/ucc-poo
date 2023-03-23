@@ -1,6 +1,16 @@
-# ucc-poo
-## pgm Basico 1
-![pgmBasico1](/pgmsBasicos/pgmBasico1.png) 
+# **UCC-POO** ![icon](./images/code.png)
+### Curso programacion Orientada a Objetos de la UCC
 
-## pgma Basico Factura
-![pgmBasico1](/pgmsBasicos/pgmBasicoFactura.png) 
+# **Projects Programing Language** 
+
+| Programming Language                       | Folder                |  Status        |
+| ------------------------------------------ | --------------------- | -------------- |
+| ![c++](./images/icon-c.png) C++            | [`c++`](./c++)        | `Comming soon` |
+| ![java](./images/icon-java.png) Java       | [`java`](./java/)     | `In Progress`  |
+| ![ruby](./images/icon-ruby.png) Ruby       | [`ruby`](./ruby/)     | `Pending`      |
+| ![python](./images/icon-python.png) Python | [`python`](./python/) | `Pending`      |
+
+## Next Projects
+![go](./images/icon-go.png) Go Language
+
+by: [`Santiago Duran`](https://www.linkedin.com/in/santiago-duran-canedo-2b713b231/) ![linkedin](https://img.icons8.com/sf-ultralight/2x/linkedin.png)
