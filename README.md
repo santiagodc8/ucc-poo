@@ -5,10 +5,10 @@
 
 | Programming Language                       | Folder                |  Status        |
 | ------------------------------------------ | --------------------- | -------------- |
-| ![c++](./images/icon-c.png) C++            | [`c++`](./c++)        | `Comming soon` |
+| ![c++](./images/icon-c.png) C++            | [`c++`](./c++)        | `In Progress`  |
 | ![java](./images/icon-java.png) Java       | [`java`](./java/)     | `In Progress`  |
 | ![ruby](./images/icon-ruby.png) Ruby       | [`ruby`](./ruby/)     | `Pending`      |
-| ![python](./images/icon-python.png) Python | [`python`](./python/) | `Pending`      |
+| ![python](./images/icon-python.png) Python | [`python`](./python/) | `Comming soon` |
 
 ## Next Projects
 ![go](./images/icon-go.png) Go Language
