@@ -7,8 +7,8 @@
 | ------------------------------------------ | --------------------- | -------------- |
 | ![c++](./images/icon-c.png) C++            | [`c++`](./c++)        | `In Progress`  |
 | ![java](./images/icon-java.png) Java       | [`java`](./java/)     | `In Progress`  |
-| ![ruby](./images/icon-ruby.png) Ruby       | [`ruby`](./ruby/)     | `Pending`      |
 | ![python](./images/icon-python.png) Python | [`python`](./python/) | `Comming soon` |
+| ![ruby](./images/icon-ruby.png) Ruby       | [`ruby`](./ruby/)     | `Pending`      |
 
 ## Next Projects
 ![go](./images/icon-go.png) Go Language
