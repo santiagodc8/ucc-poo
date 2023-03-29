@@ -1,5 +1,5 @@
 # Factura Java
 
-## Ejecucion en VScode
-![factura](./assets/factura_VScode.png)
+## Ejecucion en la Terminal
+![factura](./assets/factura_terminal.png)
 
