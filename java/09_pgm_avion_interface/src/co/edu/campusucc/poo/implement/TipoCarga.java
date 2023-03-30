@@ -1,6 +1,6 @@
 package co.edu.campusucc.poo.implement;
 
-import co.edu.campusucc.poo.Avion;
+import co.edu.campusucc.poo.abst.Avion;
 import co.edu.campusucc.poo.interfaces.IAvionCarga;
 
 public class TipoCarga extends Avion implements IAvionCarga{
@@ -9,6 +9,7 @@ public class TipoCarga extends Avion implements IAvionCarga{
         super();
         setTipo("Carga");
     }
+    
     @Override
     public void startingEngine() {
         System.out.println("⛽Check Fuel ✅");
@@ -54,6 +55,35 @@ public class TipoCarga extends Avion implements IAvionCarga{
             }
         }
         System.out.println("Stoped...⚡⚡");
+    }
+    
+    @Override
+    public void openDoors() {
+        System.out.println("✅ Open Door 🆗");
+    }
+    @Override
+    public void closeDoors() {
+        System.out.println("✅ Close Door 🆗");
+    }
+    @Override
+    public void pickUp() {
+        System.out.println("✅ PickUp 🆗");
+    }
+    
+    @Override
+    public void chargeFuel(int litros) {
+        super.chargeFuel(litros);
+        System.out.println("");
+        for (int i = 0; i < litros; i++) {
+            try {
+                System.out.print("⛽");
+                Thread.sleep(100);
+            } catch (InterruptedException e) {
+                System.err.println("⛔:" + e);
+            }
+        }
+        System.out.println("");
+        System.out.println("⛽ Full Fuel ✅");
     }
     
 }

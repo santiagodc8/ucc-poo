@@ -1,9 +1,7 @@
 package co.edu.campusucc.poo.implement;
 
-import co.edu.campusucc.poo.Avion;
-import co.edu.campusucc.poo.interfaces.IAvionStandar;
-
-public class TipoComercial extends Avion implements IAvionStandar {
+import co.edu.campusucc.poo.abst.Avion;
+public class TipoComercial extends Avion {
 
     public TipoComercial() {
         super();

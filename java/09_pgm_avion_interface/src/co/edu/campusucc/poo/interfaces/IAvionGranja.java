@@ -1,11 +1,7 @@
 package co.edu.campusucc.poo.interfaces;
 
-public interface IAvionGranja {
+public interface IAvionGranja implements IAvionStandar {
 
-    void startingEngine();
-
-    void speedUp();
-
-    void stopingEngine();
+    void irrigation();
 
 }

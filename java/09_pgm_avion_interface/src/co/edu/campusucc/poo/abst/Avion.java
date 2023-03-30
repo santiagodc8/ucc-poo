@@ -1,6 +1,8 @@
 package co.edu.campusucc.poo.abst;
 
-public abstract class Avion {
+import co.edu.campusucc.poo.interfaces.IAvionStandar;
+
+public abstract class Avion implements IAvionStandar {
     public Avion() {
     }
 
@@ -14,11 +16,14 @@ public abstract class Avion {
     }
 
     // Abstract Behavior
+    @Override
     public abstract void startingEngine();
 
+    @Override
     public abstract void stopingEngine();
 
     // Definir comportamiento
+    @Override
     public void speedUp() {
         String speedUpString = "SpeedUp in progres: ";
         for (int i = 0; i < velocidad; i++) {
@@ -48,10 +53,12 @@ public abstract class Avion {
         return getVelocidad();
     }
 
+    @Override
     public void currentSpeed() {
         System.out.println("Current Speed 🛫: " + getVelocidad());
     }
 
+    @Override
     public void landing() {
         for (int i = 0; i < 5; i++) {
             System.out.println("🛬🛬 Landing in Progress 🚷🚷");
@@ -64,28 +71,7 @@ public abstract class Avion {
 
     }
 
-    public void shootMissiles(){
-        for (int i = 0; i < 5; i++) {
-            System.out.println("🚀🚀 Missiles ready to fire 🔥🔥🔥");
-            try {
-                Thread.sleep(1000 - (i * 50));
-            } catch (InterruptedException e) {
-                System.err.println("⛔:" + e);
-            }
-        }
-    }
-
-    public void irrigation(){
-        for (int i = 0; i < 5; i++) {
-            System.out.println("🛩️🛩️ irrigation in process 💧💧💧");
-            try {
-                Thread.sleep(1000 - (i * 50));
-            } catch (InterruptedException e) {
-                System.err.println("⛔:" + e);
-            }
-        }
-    }
-    
+    @Override
     public void descent(){
         String speedUpString = "";
         for (int i = 0; i < velocidad; i++) {
@@ -125,6 +111,11 @@ public abstract class Avion {
 
     public void setVelocidad(int velocidad) {
         this.velocidad = velocidad;
+    }
+
+    @Override
+    public void chargeFuel(int litros) {
+        System.out.println("⛽ Charging Fuel: "+litros+" 💧💧💧");
     }
 
 
