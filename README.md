@@ -7,7 +7,7 @@
 | ------------------------------------------ | --------------------- | --------------  |
 | ![c++](./images/icon-c.png) C++            | [`c++`](./c++)        | `Completed✅`   |
 | ![java](./images/icon-java.png) Java       | [`java`](./java/)     | `Completed✅`   |
-| ![python](./images/icon-python.png) Python | [`python`](./python/) | `In Progress⏳` |
+| ![python](./images/icon-python.png) Python | [`python`](./python/) | `Completed✅` |
 | ![ruby](./images/icon-ruby.png) Ruby       | [`ruby`](./ruby/)     | `In Progress⏳` |
 | ![go](./images/icon-go.png) Go             | [`go`](./go/)         | `Pending📌`     |
 
