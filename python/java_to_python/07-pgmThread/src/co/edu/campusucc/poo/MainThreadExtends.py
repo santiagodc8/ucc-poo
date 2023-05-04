@@ -1,5 +1,5 @@
 import random
-from src.co.edu.campusucc.poo import ThreadExtends
+from ThreadExtends import ThreadExtends
 
 def main():
     thread = ThreadExtends()

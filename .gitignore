@@ -24,3 +24,6 @@ hs_err_pid*
 
 bin
 .vscode
+
+#python Exception
+__pycache__

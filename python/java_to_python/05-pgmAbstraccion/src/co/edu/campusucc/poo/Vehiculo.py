@@ -47,7 +47,7 @@ class Vehiculo(ABC):
     def parking(self):
         for i in range(5):
             print("¡¡🅿️🅿️ Parking in Progress ⚠️⚠️!!")
-            time.sleep(1 - (i * 0.05))
+            time.sleep(1 - (abs(i) * 0.05))
 
     def breaking(self):
         speedUpString = ""
@@ -56,7 +56,7 @@ class Vehiculo(ABC):
         for i in range(10):
             speedUpString = speedUpString[:-1]
             print(f"¡¡🚥 Braking in Progress🚥: {speedUpString}")
-            time.sleep(1 - (self.velocidad + i * 0.05))
+            time.sleep(abs(1 - (self.velocidad + i * 0.05)))
 
         self.downSpeed(10)
 

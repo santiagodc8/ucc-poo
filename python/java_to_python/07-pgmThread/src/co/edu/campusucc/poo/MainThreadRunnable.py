@@ -1,6 +1,6 @@
 import random
 import threading
-from src.co.edu.campusucc.poo import ThreadRunnable
+from ThreadRunnable import ThreadRunnable
 
 def main():
     runnable = ThreadRunnable()
