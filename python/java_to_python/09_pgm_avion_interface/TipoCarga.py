@@ -1,11 +1,11 @@
-from src.co.edu.campusucc.poo.abst import Avion
-from src.co.edu.campusucc.poo.interfaces import IAvionMilitar
 import time
+from Avion import Avion
+from IAvionCarga import IAvionCarga
 
-class TipoMilitar(Avion, IAvionMilitar):
+class TipoCarga(Avion, IAvionCarga):
     def __init__(self):
         super().__init__()
-        self.setTipo("Militar")
+        self.setTipo("Carga")
     
     def startingEngine(self):
         print("⛽Check Fuel ✅")
@@ -19,7 +19,7 @@ class TipoMilitar(Avion, IAvionMilitar):
     
     def speedUp(self):
         speedUpString = "speed up in Progress: "
-        for i in range(super().getVelocidad()):
+        for i in range(self.getVelocidad()):
             speedUpString += "✈️"
         
         for i in range(10):
@@ -29,7 +29,7 @@ class TipoMilitar(Avion, IAvionMilitar):
                 time.sleep(0.5 - (i * 0.05))
             except Exception as e:
                 print("⛔: {}".format(e))
-        super().addSpeed(10)
+        self.addSpeed(10)
     
     def stopingEngine(self):
         print("✅ Check the Turbine 🆗🆗")
@@ -41,13 +41,14 @@ class TipoMilitar(Avion, IAvionMilitar):
                 print("⛔: {}".format(e))
         print("Stoped...⚡⚡")
     
-    def shootMissiles(self):
-        for i in range(5):
-            print("🚀🚀 Missiles ready to fire 🔥🔥🔥")
-            try:
-                time.sleep(1 - (i * 0.05))
-            except Exception as e:
-                print("⛔: {}".format(e))
+    def openDoors(self):
+        print("✅ Open Door 🆗")
+    
+    def closeDoors(self):
+        print("✅ Close Door 🆗")
+    
+    def pickUp(self):
+        print("✅ PickUp 🆗")
     
     def chargeFuel(self, litros):
         super().chargeFuel(litros)

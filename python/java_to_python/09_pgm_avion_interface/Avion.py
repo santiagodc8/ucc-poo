@@ -1,7 +1,6 @@
 from abc import ABC, abstractmethod
 import time
-from src.co.edu.campusucc.poo.interfaces import IAvionStandar
-
+from IAvionStandar import IAvionStandar
 
 class Avion(ABC, IAvionStandar):
     def __init__(self):

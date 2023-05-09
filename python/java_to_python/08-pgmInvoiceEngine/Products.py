@@ -1,12 +1,12 @@
 from InvoiceEngine import InvoiceEngine
-from Iinvoice import Iinvoice
+from IProducts import IProducts
 
-class Invoice(InvoiceEngine, Iinvoice):
-    def tipo(self):
-        print("Tipo: Factura Fisica 📃📃")
-        
-    def total(self):
-        print("Total:💲200 ")
-        
+class Products(InvoiceEngine, IProducts):
+    def nombreProducto(self):
+        print("Producto: 📱 Celular")
+
+    def precio(self):
+        print("Precio: 💲200")
+
     def id(self):
-        print("🆔: 3672")
+        print("🆔: 27862")

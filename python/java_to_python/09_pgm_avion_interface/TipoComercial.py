@@ -1,5 +1,5 @@
 import time
-from src.co.edu.campusucc.poo.abst import Avion
+from Avion import Avion
 
 class TipoComercial(Avion):
     def __init__(self):

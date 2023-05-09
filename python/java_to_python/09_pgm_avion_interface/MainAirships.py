@@ -1,5 +1,8 @@
-from src.co.edu.campusucc.poo.implement import TipoAvioneta, TipoCarga, TipoComercial, TipoMilitar
-from src.co.edu.campusucc.poo.interfaces import IAvionStandar
+from TipoAvioneta import TipoAvioneta 
+from TipoCarga import TipoCarga
+from TipoComercial import TipoComercial
+from TipoMilitar import TipoMilitar
+from IAvionStandar import IAvionStandar
 
 if __name__ == "__main__":
     

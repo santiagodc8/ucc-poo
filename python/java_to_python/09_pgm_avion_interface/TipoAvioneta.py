@@ -1,6 +1,6 @@
 from time import sleep
-from src.co.edu.campusucc.poo.abst import Avion
-from src.co.edu.campusucc.poo.interfaces import IAvionGranja
+from Avion import Avion
+from IAvionGranja import IAvionGranja
 
 class TipoAvioneta(Avion, IAvionGranja):
     def __init__(self):

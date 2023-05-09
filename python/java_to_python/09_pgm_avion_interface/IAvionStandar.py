@@ -1,5 +1,7 @@
 from abc import ABC, abstractmethod
-from co.edu.campusucc.poo.interfaces import IAvionCarga, IAvionMilitar, IAvionGranja
+from IAvionCarga import IAvionCarga 
+from IAvionMilitar import IAvionMilitar
+from IAvionGranja import IAvionGranja
 
 class IAvionStandar(IAvionCarga, IAvionMilitar, IAvionGranja, ABC):
     
