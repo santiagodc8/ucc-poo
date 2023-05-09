@@ -80,7 +80,7 @@ class Avion
     10.times do |i|
       speedUpString = speedUpString[0..-2]
       puts "🛬🛬Descent in Progress🛬🛬: " + speedUpString
-      sleep(1 - (@velocidad + i * 0.05))
+      sleep(1 + (@velocidad + i * 0.05))
     end
 
     downSpeed(10)
