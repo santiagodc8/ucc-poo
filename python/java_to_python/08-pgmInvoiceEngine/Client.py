@@ -1,5 +1,5 @@
-from src.co.edu.campusucc.poo.engines import InvoiceEngine
-from src.co.edu.campusucc.poo.interfaces import IClient
+from InvoiceEngine import InvoiceEngine
+from IClient import IClient
 
 class Client(InvoiceEngine, IClient):
     def nombre(self):

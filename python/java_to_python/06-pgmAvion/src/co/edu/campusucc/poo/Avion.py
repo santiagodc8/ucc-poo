@@ -66,7 +66,7 @@ class Avion(ABC):
         for i in range(10):
             speedUpString = speedUpString[:-1]
             print("🛬🛬Descent in Progress🛬🛬: " + speedUpString)
-            time.sleep(1 - (self.velocidad + i * 0.05))
+            time.sleep(1 - (abs(i) * 0.05))
 
         self.downSpeed(10)
 

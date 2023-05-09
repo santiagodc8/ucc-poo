@@ -1,5 +1,6 @@
-from src.co.edu.campusucc.poo.domain import Client, Invoice, Products
-
+from Client import Client
+from Invoice import Invoice
+from Products import Products
 def main():
     clie = Client()
     prod = Products()

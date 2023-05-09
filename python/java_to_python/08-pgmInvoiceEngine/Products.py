@@ -1,5 +1,5 @@
-from src.co.edu.campusucc.poo.engines import InvoiceEngine
-from src.co.edu.campusucc.poo.interfaces import Iinvoice
+from InvoiceEngine import InvoiceEngine
+from Iinvoice import Iinvoice
 
 class Invoice(InvoiceEngine, Iinvoice):
     def tipo(self):
