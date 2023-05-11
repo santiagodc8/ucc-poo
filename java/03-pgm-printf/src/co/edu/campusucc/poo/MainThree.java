@@ -1,9 +1,10 @@
+package co.edu.campusucc.poo;
 import java.util.Date;
 
-public class pgmPrintf {
+public class MainThree {
     public static void main(String[] args) {
         System.out.println("+-----------------------------------+");
-        System.out.println("+---------- PGM: phmPrint ----------+");
+        System.out.println("+---------- PGM: pgmPrint ----------+");
         System.out.println("Autor: 👉🏽👉🏽👉🏽Santiago Duran👈🏽👈🏽👈🏽 ");
         System.out.println("+-----------------------------------+");
 

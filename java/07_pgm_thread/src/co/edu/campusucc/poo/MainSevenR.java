@@ -4,7 +4,7 @@ import java.util.Random;
 
 import co.edu.campusucc.poo.domain.ThreadRunnable;
 
-public class MainThreadRunnable {
+public class MainSevenR {
 
     public static void main(String[] args) {
         ThreadRunnable runnable = new ThreadRunnable();

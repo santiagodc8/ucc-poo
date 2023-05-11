@@ -1,9 +1,15 @@
-package co.edu.campusucc.poo;
+package co.edu.campusucc.poo.app;
 
-public class MainAirships {
+import co.edu.campusucc.poo.implement.TipoAvioneta;
+import co.edu.campusucc.poo.implement.TipoCarga;
+import co.edu.campusucc.poo.implement.TipoComercial;
+import co.edu.campusucc.poo.implement.TipoMilitar;
+import co.edu.campusucc.poo.interfaces.IAvionStandar;
+
+public class MainNine {
     public static void main(String[] args) {
 
-        Avion avion = new TipoComercial();
+        IAvionStandar avion = new TipoComercial();
         avion.setMarca("Boeing");
         avion.setTipo("Comercial");
         System.out.println(avion);

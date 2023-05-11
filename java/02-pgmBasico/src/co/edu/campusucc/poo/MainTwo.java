@@ -1,6 +1,7 @@
+package co.edu.campusucc.poo;
 import java.util.Date;
 
-public class pgmBasicoFactura{
+public class MainTwo{
     public static void main(String[] args) {
         Factura f = new Factura();
         f.setFecha(new Date());
