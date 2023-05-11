@@ -1,6 +1,6 @@
 package co.edu.campusucc.poo;
 
-public class MainGrandPrix {
+public class MainFive {
     public static void main(String[] args) throws InterruptedException {
         Vehiculo vehiculo = new TipoCombustion();
         vehiculo.setMarca("Toyota");
