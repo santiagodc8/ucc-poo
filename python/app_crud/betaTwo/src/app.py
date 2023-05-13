@@ -12,7 +12,7 @@ app = Flask(__name__, template_folder = template_dir)
 @app.route('/')
 def home():
     cursor = db.database.cursor()
-    cursor.execute("SELECT * FROM user")
+    cursor.execute("SELECT * FROM users")
     myresult = cursor.fetchall()
     # Convertir los datos a diccionario
     insertObject = []
@@ -23,19 +23,43 @@ def home():
     return render_template('index.html', data=insertObject)
 
 #Ruta para guardar usuarios en la bdd
-@app.route('/user', methods=['POST'])
+@app.route('/users', methods=['POST'])
 def addUser():
     name = request.form['name']
-    id = request.form['id']
     phone = request.form['phone']
+    identification = request.form['identification']
     
-    if name and id and phone:
+    if name and phone and identification :
         cursor = db.database.cursor()
-        sql = "INSERT INTO user (name, id, phone) VALUES (%s, %s, %s)"
-        data = (name, id, phone)
+        sql = "INSERT INTO users (name, phone, identification) VALUES (%s, %s, %s)"
+        data = (name, phone, identification)
         cursor.execute(sql, data)
         db.database.commit() 
     return redirect(url_for('home'))
+
+@app.route('/delete/<string:id>')
+def delete(id):
+    cursor = db.database.cursor()
+    sql = "DELETE FROM users WHERE id=%s"
+    data = (id,)
+    cursor.execute(sql, data)
+    db.database.commit()
+    return redirect(url_for('home'))
+
+@app.route('/edit/<string:id>', methods=['POST'])
+def edit(id):
+    name = request.form['name']
+    phone = request.form['phone']
+    identification = request.form['identification']
+    
+    if name and phone and identification:
+        cursor = db.database.cursor()
+        sql = "UPDATE users SET name = %s, phone = %s, identification = %s WHERE id = %s"
+        data = (name, phone, identification, id)
+        cursor.execute(sql, data)
+        db.database.commit() 
+    return redirect(url_for('home'))
+    
     
 
 
