@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, redirect, url_for
 import os
 import database as db
 
@@ -22,6 +22,21 @@ def home():
     cursor.close()
     return render_template('index.html', data=insertObject)
 
+#Ruta para guardar usuarios en la bdd
+@app.route('/user', methods=['POST'])
+def addUser():
+    name = request.form['name']
+    id = request.form['id']
+    phone = request.form['phone']
+    
+    if name and id and phone:
+        cursor = db.database.cursor()
+        sql = "INSERT INTO user (name, id, phone) VALUES (%s, %s, %s)"
+        data = (name, id, phone)
+        cursor.execute(sql, data)
+        db.database.commit() 
+    return redirect(url_for('home'))
+    
 
 
 if __name__ == '__main__':
